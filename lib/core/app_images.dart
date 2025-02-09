@@ -1,3 +1,5 @@
 base class AppImages {
-  static String logo = 'assets/images/logo.png';
+  static final  String _root = 'assets/images/';
+  static String logo = '${_root}logo.png';
+  static String homeBanner = '${_root}home banner.png';
 }

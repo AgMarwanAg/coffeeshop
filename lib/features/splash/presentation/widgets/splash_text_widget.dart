@@ -1,5 +1,6 @@
 import 'package:coffeeshop/core/styles/app_colors.dart';
 import 'package:coffeeshop/core/styles/app_text_styles.dart';
+import 'package:coffeeshop/features/home/presentation/home_screen.dart';
 import 'package:coffeeshop/shared/widgets/primary_btn.dart';
 import 'package:coffeeshop/shared/widgets/text_widget.dart';
 import 'package:flutter/material.dart';
@@ -31,7 +32,9 @@ class SplashTextWidget extends StatelessWidget {
           SizedBox(height: 32.h),
           PrimaryBtn(
             text: 'Get Started',
-            onTap: () {},
+            onTap: () {
+              Navigator.pushNamed(context,HomeScreen.route );
+            },
           ),
           SizedBox(height: 41.h),
         ],
